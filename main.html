@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="icon" type="image/png" href="./images/cloudy.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="heading">The Weather App</h1>
+    <div class="enter-location">
+        <input type="text" name="location" id="location" placeholder="Enter City Name">
+        <button class="search"><img class="search-icon" src="./images/search.svg"></button>        
+    </div>
+
+    <div class="container">
+        <div class="header section">
+            <p>Current Weather</p>
+            <p class="time"></p>
+        </div>
+        <hr>
+
+        <p class="city-name"></p>
+        <div class="grid">
+            <div class="left">
+                <img class="weather-icon" src="" alt="weather-icon">
+                <h1 class="temperature"></h1>
+                <p class="weather-condition"></p>
+            </div>
+            <div class="right">
+                <p class="feels-like">Feels like : </p>
+                <p class="humidity">Humidity : </p>
+                <p class="wind-speed">Wind Speed : </p>
+                <p class="visibility">Visibility: </p>
+            </div>
+        </div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <hr>
+        <p class="hourly-heading section">Upcoming Weather Forecast</p>
+        <hr>
+        <div class="hourly-weather">
+            <div class="hourly-detail">
+                <img src="" alt="Weather Icon" class="hourly-icon weather-icon">
+                <h3 class="hourly-temp"></h3>
+                <p class="hourly-time"></p>
+            </div>
+            <div class="hourly-detail">
+                <img src="" alt="Weather Icon" class="hourly-icon weather-icon">
+                <h3 class="hourly-temp"></h3>
+                <p class="hourly-time"></p>
+            </div>
+            <div class="hourly-detail">
+                <img src="" alt="Weather Icon" class="hourly-icon weather-icon">
+                <h3 class="hourly-temp"></h3>
+                <p class="hourly-time"></p>
+            </div>
+            <div class="hourly-detail">
+                <img src="" alt="Weather Icon" class="hourly-icon weather-icon">
+                <h3 class="hourly-temp"></h3>
+                <p class="hourly-time"></p>
+            </div>
+            <div class="hourly-detail">
+                <img src="" alt="Weather Icon" class="hourly-icon weather-icon">
+                <h3 class="hourly-temp"></h3>
+                <p class="hourly-time"></p>
+            </div>
+            <div class="hourly-detail">
+                <img src="" alt="Weather Icon" class="hourly-icon weather-icon">
+                <h3 class="hourly-temp"></h3>
+                <p class="hourly-time"></p>
+            </div>
+            <div class="hourly-detail">
+                <img src="" alt="Weather Icon" class="hourly-icon weather-icon">
+                <h3 class="hourly-temp"></h3>
+                <p class="hourly-time"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./scripts/main.js"></script>
+</html>
