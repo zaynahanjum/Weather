@@ -37,7 +37,7 @@ function time() {
 
 async function geocoder(location) {
     try {
-        let response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=819fa8a96edae96bf8e32cb3e6c97bd0`);
+        let response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${location}&appid={your API id}`);
         let data = await response.json();
         window.latitude = data[0].lat;
         window.longitude = data[0].lon;
@@ -64,7 +64,7 @@ async function fetchWeatherDetails(lat, lon) {
         tempUnit = checkUnit();
         units = tempUnit[0];
         unitSymbol = tempUnit[1];
-        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=819fa8a96edae96bf8e32cb3e6c97bd0`);
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid={your API id}`);
         let data = await response.json();
         let cityName = data.name;
         let weather = data.weather[0].description;
@@ -98,7 +98,7 @@ async function weekWeather(lat, lon) {
         let units = tempUnit[0];
         let unitSymbol = tempUnit[1];
 
-        let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&appid=819fa8a96edae96bf8e32cb3e6c97bd0`);
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&appid={your API id}`);
         let data = await response.json();
         let hourlyDetails = document.querySelectorAll(".hourly-detail");
 
